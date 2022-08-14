@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дизайн-студия SCANDI</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="header">
@@ -41,13 +42,13 @@
   <main>
     <section class="intro">
       <h1 class="main-title">Поможем сделать вашу квартиру уютнее</h1>
-      <p> Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-      <a href="#leave-request">Оставить заявку</a>
+      <p class="intro-text"> Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+      <a class="intro-button button" href="#leave-request">Оставить заявку</a>
     </section>
 
     <section class="about" id="about">
       <h2 class="section-title">О нас</h2>
-      <img src="./assets/img/about-us-illustration.jpg" alt="Сервировка стола с премиальным текстилем." height="465">
+      <img src="./assets/img/about-us-illustration.jpg" alt="Сервировка стола с премиальным текстилем." width="445" height="465">
       <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
       <p>Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: « Да! Это именно то, что действительно достойно моего дома!»</p>
       <div class="achievements">
@@ -64,26 +65,26 @@
       <ul class="projects-list">
         <li class="project-item">
           <img src="./assets/img/project1.jpg" alt="Проект 1." width="488" height="451">
-          <h3>Квартира-студия 30 кв.м.</h3>
+          <h3 class="project-title">Квартира-студия 30 кв.м.</h3>
           <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
         </li>
         <li class="project-item">
           <img src="./assets/img/project2.jpg" alt="Проект 2." width="692" height="451">
-          <h3 class="visually-hidden">Квартира-студия 40 кв.м.</h3>
+          <h3 class="project-title visually-hidden">Квартира-студия 40 кв.м.</h3>
           <p class="visually-hidden">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
         </li>
         <li class="project-item">
           <img src="./assets/img/project3.jpg" alt="Проект 3." width="692" height="451">
-          <h3 class="visually-hidden">Квартира-студия 50 кв.м.</h3>
+          <h3 class="project-title visually-hidden">Квартира-студия 50 кв.м.</h3>
           <p class="visually-hidden">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
         </li>
         <li class="project-item">
           <img src="./assets/img/project4.jpg" alt="Проект 4." width="488" height="451">
-          <h3 class="visually-hidden">Квартира-студия 60 кв.м.</h3>
+          <h3 class="project-title visually-hidden">Квартира-студия 60 кв.м.</h3>
           <p class="visually-hidden">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
         </li>
       </ul>
-      <a href="">Смотреть ещё</a>
+      <a class="see-more" href="">Смотреть ещё</a>
       
     </section>
 
@@ -125,7 +126,7 @@
             <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
             <p>Буду советовать и своим друзьям к вам обращаться!»</p>
           </div>
-          <div class="review-autor">
+          <div class="review-author">
             <span>Анна Беловская</span>
           </div>
         </article>
@@ -156,7 +157,7 @@
         <input type="text" placeholder="Ваше имя" form="request" id="username" name="username" required>
         <label class="visually-hidden" for="phone-number">Телефон</label>
         <input type="tel" placeholder="Введите телефон" form="request" id="phone-number" name="phone-number" required>
-        <button type="submit">Оставить заявку</button>
+        <button class="request-button button" type="submit">Оставить заявку</button>
       </form>
       <img class="map" src="./assets/img/map.jpg" alt="Карта с местонахождением офиса по адресу г. Санкт-петербург, ул. Большая Конюшенная, 19.">
     </section>
