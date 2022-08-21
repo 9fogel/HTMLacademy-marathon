@@ -3,7 +3,7 @@
   src: url('./assets/fonts/Montserrat-Medium.woff2') format('woff2'),
       url('./assets/fonts/Montserrat-Medium.woff') format('woff');
   font-weight: 500;
-  font-style: normal;
+  font-style: medium;
   font-display: swap;
 }
 
@@ -11,7 +11,7 @@
   font-family: 'Montserrat';
   src: url('./assets/fonts/Montserrat-Regular.woff2') format('woff2'),
       url('./assets/fonts/Montserrat-Regular.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -40,6 +40,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a {
@@ -48,20 +49,62 @@ a {
 }
 
 .header {
+  min-height: 102px;
+  padding: 36px 99px;
   font-size: 16px;
   line-height: auto;
+  background-image: url('./assets/img/bg-intro.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 90px 1fr 145px;
+  column-gap: 35px;
+}
+
+.logo {
+  display: flex;
+  width: 89px;
+  margin-right: 64px;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
 }
 
 .intro {
+  padding-top: 55px;
+  padding-left: 184px;
+  padding-bottom: 168px;
   background-image: url('./assets/img/bg-intro.jpg');
+  background-position-y: -102px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .main-title {
+  padding-bottom: 24px;
+  width: 534px;
   font-size: 50px;
   line-height: 62px;
 }
 
+.intro-text {
+  padding-bottom: 21px;
+  width: 418px;
+}
+
 .button {
+  padding: 25px 67px 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -72,16 +115,68 @@ a {
   cursor: pointer;
 }
 
+.intro-button {
+  display: inline-block;
+}
+
+.about {
+  padding-top: 65px;
+}
+
 .section-title {
+  padding-bottom: 40px;
   font-size: 40px;
   line-height: 50px;
+  text-align: center;
   text-transform: uppercase;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 63px;
+  padding-bottom: 21px;
+}
+
+.about-image {
+  margin-left: auto;
+  width: 444px;
+  height: auto;
+}
+
+.about-text {
+  margin-right: auto;
+  width: 528px;
+}
+
 .achievements {
+  font-size: 30px;
+  font-weight: 500;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #8D7370;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* margin: 0 auto; */
+  padding-top: 85px;
+  padding-bottom: 81px;
+}
+
+.achievements-list span {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 62px;
+  text-align: center;
+}
+
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .projects-list {
