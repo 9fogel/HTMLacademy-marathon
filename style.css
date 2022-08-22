@@ -209,6 +209,7 @@ section {
 
 .portfolio {
   margin: 0 auto;
+  padding-bottom: 65px;
   max-width: 1200px;
 }
 
@@ -286,24 +287,176 @@ section {
   background-position: right 50%;
 }
 
+.team,
+.how-we-work {
+  background-color: #E2C4BA;
+}
+
+.team {
+  padding-top: 50px;
+}
+
+.team-members-list {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 38px;
+  margin: 0 auto;
+  max-width: 1036px;
+}
+
+.team-member-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.how-we-work {
+  padding-top: 35px;
+  padding-bottom: 80px;
+}
+
+.section-title-workflow {
+  margin-left: 44px;
+}
+
 .workflow-list {
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 90px;
   text-align: center;
+}
+
+.reviews {
+  padding-bottom: 65px;
+}
+
+.section-title-reviews {
+  margin-left: 21px;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 0 101px;
+  max-width: 1036px;
+}
+
+.customer-review,
+.review-photos {
+  width: 50%;
+}
+
+.customer-review {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin: auto 0;
+}
+
+.display-none {
+  display: none;
+}
+
+.review-quote {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .review-author {
   text-transform: uppercase;
 }
 
+.review-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .leave-request {
+  padding-top: 50px;
   color: #FFFFFF;
   background-color: #8D7370;
+}
+
+.request-container {
+  display: grid;
+  grid-template-columns: 1fr 590px;
+  column-gap: 20px;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.request-content {
+  margin-left: auto;
+  /* max-width: 562px; */
+}
+
+.section-title-request {
+  /* margin-right: 54px; */
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.request-text {
+  /* margin-right: 54px; */
+  max-width: 460px;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-top: 48px;
+  max-width: 562px;
+  width: 100%;
+}
+
+.form-input {
+  max-width: 562px;
+  width: 100%;
+  height: 35px;
+  color: #FFFFFF;
+  background-color: #8D7370;
+  border: none;
+  border-bottom: solid 1px #FFFFFF;
 }
 
 input::placeholder {
   font-size: 18px;
   line-height: 30px;
+  color: #FFFFFF;
 }
 
 .request-button {
+  align-self: flex-start;
   border: none;
+}
+
+.map {
+  margin-right: auto;
+  margin-left: 40px;
+  margin-top: -50px;
+}
+
+.footer {
+  min-height: 104px;
+  padding: 37px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footer-details-left {
+  display: flex;
+  gap: 42px;
 }
