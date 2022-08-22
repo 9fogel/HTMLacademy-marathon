@@ -48,6 +48,16 @@ a {
   color: inherit;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   min-height: 102px;
   padding: 36px 99px;
@@ -60,8 +70,10 @@ a {
 
 .header-content {
   display: grid;
-  grid-template-columns: 90px 1fr 145px;
-  column-gap: 35px;
+  grid-template-columns: 90px 1fr;
+  column-gap: 89px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .logo {
@@ -71,19 +83,28 @@ a {
 }
 
 .nav {
-  margin-left: auto;
-  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 145px;
+  align-items: center;
+  gap: 34px;
+  /* margin-left: auto; */
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
+  max-width: 842px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 26px;
 }
 
+section {
+  padding-top: 65px;
+}
+
 .intro {
-  padding-top: 55px;
-  padding-left: 184px;
+  padding-top: 50px;
   padding-bottom: 168px;
   background-image: url('./assets/img/bg-intro.jpg');
   background-position-y: -102px;
@@ -91,15 +112,20 @@ a {
   background-size: 100%;
 }
 
+.intro-content {
+  margin: 0 auto;
+  max-width: 1032px;
+}
+
 .main-title {
-  padding-bottom: 24px;
-  width: 534px;
+  padding-bottom: 20px;
+  width: 530px;
   font-size: 50px;
   line-height: 62px;
 }
 
 .intro-text {
-  padding-bottom: 21px;
+  padding-bottom: 26px;
   width: 418px;
 }
 
@@ -117,10 +143,6 @@ a {
 
 .intro-button {
   display: inline-block;
-}
-
-.about {
-  padding-top: 65px;
 }
 
 .section-title {
@@ -145,6 +167,9 @@ a {
 }
 
 .about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   margin-right: auto;
   width: 528px;
 }
@@ -152,6 +177,7 @@ a {
 .achievements {
   font-size: 30px;
   font-weight: 500;
+  line-height: 37px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #8D7370;
@@ -160,10 +186,11 @@ a {
 .achievements-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  /* margin: 0 auto; */
+  justify-content: space-between;
+  margin: 0 auto;
   padding-top: 85px;
   padding-bottom: 81px;
+  max-width: 1032px;
 }
 
 .achievements-list span {
@@ -178,6 +205,14 @@ a {
   flex-direction: column;
   gap: 8px;
 }
+
+/* .achievement-item:first-child {
+  margin-left: 46px;
+}
+
+.achievement-item:last-child {
+  margin-right: 46px;
+} */
 
 .projects-list {
   color: #FFFFFF;
