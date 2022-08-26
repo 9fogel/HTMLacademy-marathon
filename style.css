@@ -492,16 +492,22 @@ section {
 
 .request-container {
   display: grid;
-  grid-template-columns: 1fr 590px;
+  grid-template-columns: 508px 590px;
   column-gap: 20px;
   margin: 0 auto;
+  padding-left: 40px;
+  /* padding-left: 80px; */
   max-width: 1120px;
 }
 
-.request-content {
-  margin-left: auto;
+/* .request-content {
+  margin-right: auto;
+  
+  /* margin-left: auto; */
   /* max-width: 562px; */
-}
+  /* margin-left: auto; */
+  /* max-width: 562px; */
+/* } */
 
 .section-title-request {
   /* margin-right: 54px; */
@@ -546,7 +552,7 @@ input::placeholder {
 
 .map {
   margin-right: auto;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   margin-top: -50px;
 }
 
